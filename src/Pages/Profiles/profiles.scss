@@ -1,0 +1,113 @@
+@import '../../styles/variables';
+.profiles{
+    padding: 70px 0;
+    text-align: center;
+    .profiles_title{
+        padding: 8px;
+        background-color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 3px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .profiles_inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .profile{
+            background-color: white;
+            padding-top: 25px;
+            width: 245px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 3px;
+            img{
+                height: 90px;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 13px;
+                margin-top: 5px;
+                color: rgba(0, 0, 0, 0.612);
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            div{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 25px;
+                .follow_btn{
+                    outline: none;
+                    cursor: pointer;
+                    border: 0;
+                    color: white;
+                    border-radius: 4px;
+                    background-color: #53D690;
+                    padding: 10px 15px;
+                    font-size: 15px;
+                }
+                .message_btn{
+                    background-color: $siteBackgroundColor;
+                    outline: none;
+                    cursor: pointer;
+                    border: 0;
+                    border-radius: 4px;
+                    padding: 0px 10px;
+                    svg{
+                        color: white;
+                    }
+                }
+            }
+            .view-more_btn{
+                outline: none;
+                border: 0;
+                border-top: 1px solid rgba(0, 0, 0, 0.15);
+                background-color: white;
+                width: 100%;
+                padding: 20px;
+                cursor: pointer;
+                font-size: 15px;
+                transition: all 0.3s;
+                &:hover{
+                    background-color: $siteBackgroundColor;
+                    color: white;
+                }
+            }
+        }
+    }
+    .profiles_loader{
+        border: 1px solid #e7e7e7;
+        border-radius: 50%;
+    }
+    .profiles_see-more_btn{
+        border: 0;
+        outline: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px; 
+        transition: all 0.3s;
+        &:hover{
+            background-color: $siteBackgroundColor;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width:1060px){
+    .profiles{
+        .profiles_inner{
+            justify-content: space-evenly;
+        }
+    }
+}
+@media screen and (max-width:336px){
+    .profiles{
+        //width: 100px;
+        //margin: 0;
+        .profiles_inner{
+            //flex-direction: column;
+        }
+    }
+}

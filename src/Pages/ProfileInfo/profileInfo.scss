@@ -1,0 +1,339 @@
+@import '../../styles/variables';
+.bannerImage{
+    width: 100%;
+    height: 50vh;
+}
+.banner_btn{
+    position: absolute;
+    top: -450px;
+    right: 0;
+    background-color: white;
+    color: $siteBackgroundColor;
+    outline: none;
+    border: 2px solid $siteBackgroundColor;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s;
+    &:hover{
+        color: white;
+        background-color: $siteBackgroundColor;
+    }
+}
+.profile-info{  
+    margin-bottom: 80px;
+    display: flex;
+    margin-top: -4px;
+    .profile-info_user-info{
+        position: relative;
+        padding: 130px 10px 15px 10px;
+        background-color: white;
+        margin-right: 40px;
+        width: 250px;
+        height: 100%;
+        .contacts{
+            position: relative;
+            .contact{
+                //overflow: hidden;
+                display: flex;
+                img{
+                    margin-right: 5px;
+                }
+                a{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: #737B85;
+                    text-decoration: none;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $siteBackgroundColor;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .add-contacts-btn{
+                position: absolute;
+                right: 0;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                border: 0;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                border: 1px solid #737B85;
+                background-color: white;
+                svg{
+                    transition: all 0.3s;
+                    margin-top: 5px;
+                    color: #737B85;
+                }
+                transition: all 0.3s;
+                &:hover{
+                    background-color: #737B85;
+                }
+                &:hover svg{
+                    color: white;
+                }
+            }
+        }
+        
+        .user-img-div{
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            .user-profile-img{
+                border-radius: 50%;
+                height: 200px;
+            }
+            div{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                border-radius: 50%;
+                background-color: $siteBackgroundColor;
+                width: 45px;
+                height: 45px;
+                cursor: pointer;
+                svg{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    color: white;
+
+                }
+                &:hover{
+                    border: 2px solid white;
+                }
+            }
+        }
+    }
+    .profile-info_all-posts{
+        padding-top: 70px;
+        width: 750px;
+        h2{
+            margin-bottom: 10px;
+        }
+        .status{
+            //border: 1px solid red;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            input{
+                margin-right: 10px;
+                height: 100%;
+                outline: none;
+            }
+            button{
+                height: 100%;
+                border: 0;
+                outline: 0;
+                background-color: $siteBackgroundColor;
+                color: white;
+                cursor: pointer;
+                margin-right: 7px;
+                padding: 5px;
+                font-size: 12px;
+                border-radius: 5px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                margin-right: 15px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+            span{
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 12px;
+                height: 100%;
+                padding-top: 6px;
+                color: $siteBackgroundColor;
+            }
+        }
+        .profileInfo_navbar{
+            display: flex;
+            margin-bottom: 40px;
+            .active{
+                h4{
+                    color: $siteBackgroundColor;
+                }
+                svg{
+                    color: $siteBackgroundColor;
+                }
+            }
+            .profileInfo_link{
+                margin-right: 30px;
+                color: rgba(0, 0, 0, 0.651);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.3s;
+                &:hover{
+                    color: $siteBackgroundColor;
+                }
+            }
+
+        }
+    }
+}
+.contacts-form-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.contacts-form{
+    width: 570px;
+    max-width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    .contacts-form_title{
+        background-color: $siteBackgroundColor;
+        text-align: center;
+        padding: 15px 0;
+        color: white;
+        font-weight: 500;
+    }
+    .contacts-form_inner{
+        background-color: white;
+        text-align: center;
+        padding: 20px 40px 20px 40px;
+        h3{
+            margin-bottom: 5px;
+        }
+        .input-div{
+             position: relative;
+            // svg{
+            //     position: absolute;
+            //     cursor: pointer;
+            //     right: 0;
+            //     top: 5px;
+            // }
+            input{
+                padding: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.185);
+                outline: none;
+                border-radius: 3px;
+            }
+        }
+        button{
+            outline: none;
+            border: 0;
+            color: white;
+            font-weight: 500;
+            background-color: $siteBackgroundColor;
+            cursor: pointer;
+            padding: 10px 30px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 100px;
+        }
+        .cross{
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            cursor: pointer;
+            color: white;
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 4px;
+        }
+        .invalid-messages{
+            color: red;
+        }
+    }
+}
+.following{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .loader{
+        border-radius: 50%;
+        margin: auto;
+    }
+    .user{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 350px;
+        img{
+            border-radius: 50%;
+            height: 100px;
+            margin-right: 10px;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+            transition: all 0.3s;
+            &:hover{
+                color: $siteBackgroundColor;
+            }
+            margin-right: 10px;
+        }
+        button{
+            outline: none;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: $siteBackgroundColor;
+            color: white;
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .bannerImage{
+        height: 40vh;
+    }
+}
+@media screen and (max-width:750px){
+    .bannerImage{
+        height: 30vh;
+    }
+    .profile-info{
+        flex-direction: column;
+        .profile-info_user-info{
+            margin: auto;
+            width: 100%;
+        }
+        .profile-info_all-posts{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .bannerImage{
+        height: 20vh;
+    }
+}
+@media screen and (max-width:380px){
+    .following{
+        .user{
+            flex-direction: column;
+            img{
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            a{
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

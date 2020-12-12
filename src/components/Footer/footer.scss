@@ -1,0 +1,25 @@
+@import '../../styles/container';
+.footer{
+    height: 10vh;
+    background-color: white;
+    .footer_inner{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        img{
+            margin-right: 30px;
+        }
+        .copyright{
+            display: flex;
+            align-items: center;
+            svg{
+                margin-right: 5px;
+                color: rgba(0, 0, 0, 0.401);
+            }
+            h5{
+                color: rgba(0, 0, 0, 0.401);
+                font-weight: 600;
+            }
+        }
+    }
+}

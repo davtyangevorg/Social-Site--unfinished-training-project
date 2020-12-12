@@ -1,0 +1,201 @@
+@import '../../../styles/variables';
+.posts{
+    .post{
+        box-shadow: 0px 1px 1.5px 0px rgba(181,179,181,1);
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        .post_info{
+            margin-bottom: 20px;
+            display: flex;
+            img{
+                margin-right: 15px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            h3{
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .post_time{
+                display: flex;
+                align-items: center;
+                svg{
+                    margin-right: 5px;
+                    color: rgba(0, 0, 0, 0.267);
+                }
+                span{
+                    font-size: 13px;
+                    color: rgba(0, 0, 0, 0.367);
+                    font-weight: 500;
+                }
+            }
+        }
+        .employment{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .post_work-info{
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            .work-time{
+                margin-right: 15px;
+                color: white;
+                background-color: #51A5FB;
+                border-radius: 4px;
+                padding: 3px 12px;
+                font-size: 14px;
+            }
+            .work-price{
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+
+        .post_text{
+            margin-bottom: 25px;
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.7);
+                line-height: 20px;
+                margin-bottom: 1px;
+            }
+            span{
+                font-size: 14px;
+                color: $siteBackgroundColor;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+        .user_skills{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 25px;
+            margin-bottom: 20px;
+            span{
+                background-color: #F1F1F1;
+                color: rgba(0, 0, 0, 0.281);
+                border-radius: 20px;
+                padding: 5px 15px;
+                margin-right: 10px;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+        .post_footer{
+            display: flex;
+            justify-content: space-between;
+            .post_like{
+                display: flex;
+                .post_like_text{
+                    .likedColor{
+                        color: $siteBackgroundColor;
+                    }
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    &:hover span{
+                        color: $siteBackgroundColor;
+                    }
+                    &:hover svg{
+                        color: $siteBackgroundColor;
+                    }
+                    span{
+                        transition: all 0.1s;
+                        font-size: 13px;
+                        color: #B2B2B2;
+                        margin-right: 5px;
+                    }
+                    svg{
+                        transition: all 0.1s;
+                        color: #B2B2B2;
+                        margin-right: 5px;
+                    }
+                }
+                .post_like_quantity{
+                    background-color: $siteBackgroundColor;
+                    color: white;
+                    text-align: center;
+                    border-radius: 50%;
+                    padding-top: 6px;
+                    height: 30px;
+                    width: 30px;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+            .post_comment{
+                align-items: center;
+                display: flex;
+                cursor: pointer;
+                &:hover span{
+                    color: $siteBackgroundColor;
+                }
+                &:hover svg{
+                    color: $siteBackgroundColor;
+                }
+                svg{
+                    transition: 0.1s;
+                    margin-top: 5px;
+                    margin-right: 5px;
+                    color:  #B2B2B2;
+                }
+                span{
+                    transition: 0.1s;
+                    color:  #B2B2B2;
+                    font-size: 13px;
+                }
+            }
+        }
+        .post_comments{
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #b2b2b2cb;
+            .post_comments_inputAndImg{
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                img{
+                    height: 35px;
+                    margin-right: 5px;
+                }
+                .inputDiv{
+                    width: 100%;
+                    position: relative;
+                    .post_comments_btn{
+                        height: 100%;
+                        position: absolute;
+                        right: 15px;
+                        cursor: pointer;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    input{
+                        width: 100%;
+                        border: 0;
+                        outline: none;
+                        border-radius: 50px;
+                        background-color: #b2b2b263;
+                        padding: 10px 50px 10px 20px;
+                    }
+                }
+            }
+            .comment{
+                margin-bottom: 20px;
+                display: flex;
+                img{
+                    height: 35px;
+                    margin-right: 5px;
+                }
+                .comment_inner{
+                    padding: 5px 10px;
+                    background-color: #b2b2b263;
+                    width: 100%;
+                    border-radius: 15px
+                }
+            }
+        }
+    }
+}

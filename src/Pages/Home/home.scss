@@ -1,0 +1,474 @@
+@import '../../styles/variables';
+.home{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    .post_form_bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .post_form_box{
+        position: absolute;
+        width: 570px;
+        max-width: 80%;
+        background-color: white;
+        left: 50%;
+        top: 50%;
+        form{
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            .skills-input{
+                position: relative;
+                display: flex;
+                border: 1px solid rgba(0, 0, 0, 0.185);
+                border-radius: 4px;
+                align-items: center;
+                padding-left: 10px;
+                .skill_add_btn{
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    width: 40px;
+                    border-left: 1px solid rgba(0, 0, 0, 0.185);
+                    transition: all 0.2s;
+                    &:hover{
+                        background-color: $siteBackgroundColor;
+                        color: white;
+                    }
+                }
+                .skills{
+                    display: flex;
+                    overflow-x: scroll;
+                    width: 400px;
+                    &::-webkit-scrollbar{
+                        height: 5px;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        border-radius: 25%;
+                        background-color: red;
+                    }
+                }
+                .skill{
+                    padding: 2px 25px 2px 8px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    background-color: blanchedalmond;
+                    border-radius: 10px;
+                    height: 30px;
+                    margin-right: 10px;
+                    position: relative;
+                    svg{
+                        right: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        position: absolute;
+                    }
+                }
+                .skills_input{
+                    border-radius: 5px;
+                    width: 100%;
+                    border: 0;
+                    padding-right: 50px
+                }
+            }
+            
+            button{
+                outline: none;
+                border: 0;
+                background-color: $siteBackgroundColor;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 80px;
+                padding: 10px 0;
+                font-weight: 500;
+            }
+            .priceAndWorkTime{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                div{
+                    display: flex;
+                    .priceInput{
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        border-right: 0;
+                    }
+                    svg{
+                        margin-right: 30px;
+                        border: 1px solid  rgba(0, 0, 0, 0.185);
+                        height: 100%;
+                        padding: 5px 15px;
+                        color: rgba(0, 0, 0, 0.267);
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+                select{
+                    border: 1px solid  rgba(0, 0, 0, 0.185);
+                    width: 100%;
+                    padding-left: 10px;
+                    border-radius: 5px;
+                }
+            }
+            
+            input{
+                outline: none;
+                border:1px solid  rgba(0, 0, 0, 0.185);
+                padding: 12px 15px;
+            }
+            textarea{
+                outline: none;
+                border:1px solid  rgba(0, 0, 0, 0.185);
+                border-radius: 5px;
+                padding: 10px 10px;
+                margin-bottom: 30px;
+                resize: vertical;
+            }
+        }
+        .post_form_box_title{
+            text-align: center;
+            padding: 18px 0;
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            background-color: $siteBackgroundColor;
+        }
+        .cross{
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            color: white;
+            border-radius: 50%;
+            padding: 4px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+    }
+    
+    
+    .home_left-sidbar{
+        flex-grow: 1;
+        margin-right: 30px;
+        width: 0;
+        .welcome-box{
+            box-shadow: 0px 1px 1.5px 0px rgba(181,179,181,1);
+            text-align: center;
+            background-color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            h3{
+                margin-bottom: 7px;
+            }
+            p{
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        .suggestions{
+            box-shadow: 0px 1px 1.5px 0px rgba(181,179,181,1);
+            background-color: white;
+            padding: 20px 0px 8px 0px;
+            h3{
+                padding: 0 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .line{
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.15);
+            }
+            .suggestions_inner{
+                padding: 25px 20px;
+                .view-more_btn{
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: $siteBackgroundColor;
+                    cursor: pointer;
+                    margin: auto;
+                    width: 70px;
+                }
+            }
+        }
+    }
+    .home_center-sidbar{
+        width: 0;
+        flex-grow: 2;
+        margin-right: 30px;
+        .post-job-line{
+            height: 4px;
+            background-color: $siteBackgroundColor;
+        }
+        .post-job{
+            margin-bottom: 30px;
+            box-shadow: 0px 1px 1.5px 0px rgba(181,179,181,1);
+            background-color: white;
+            padding: 20px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                height: 50px;
+                border-radius: 50%;
+            }
+            button{
+                outline: none;
+                border: 0;
+                background-color: $siteBackgroundColor;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                height: 40px;
+                padding: 0 15px;
+                font-size: 15px;
+            }
+        }
+        .top-profiles{
+            margin-bottom: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            border-radius: 3px;
+            h3{
+                padding: 0 15px 15px 15px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+            }
+            .slider{
+                margin: auto;
+                overflow: hidden;
+                width: 482px;
+                display: flex;
+                .slider_arrow-back{
+                    left: 0px;
+                    @extend %slider_btns_style
+                }
+                .slider_arrow-forward{
+                    right: 0;
+                    @extend %slider_btns_style
+                }
+                %slider_btns_style{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    background-color: white;
+                    padding: 5px;
+                    cursor: pointer;
+                    color: rgba(0, 0, 0, 0.4);
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                }
+                .slide{
+                    transition: all 0.5s;
+                    min-width: 150px;
+                    height: 220px;
+                    box-shadow: 0px 1px 1.5px 0px rgba(181,179,181,1);
+                    background-color: white; 
+                    margin-right: 15px; 
+                    padding-top: 15px; 
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 3px;
+                    img{
+                        height: 55px;
+                        width: 55px;
+                        border-radius: 50%;
+                        margin-bottom: 7px;
+                    } 
+                    .slide_name{
+                        font-weight: 500;
+                    }
+                    .slide_job{
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: rgba(0, 0, 0, 0.412);
+                        margin-bottom: 10px;
+                    }
+                    .slide_follow_btn{
+                        outline: none;
+                        border: 0;
+                        color: white;
+                        background-color: #53D690;
+                        border-radius: 4px;
+                        padding: 5px 12px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        margin-bottom: 25px;
+                    }
+                    .slide_view-profile_Link{
+                        width: 100%;
+                        height: 100%;
+                        color: black;
+                        border-top: 1px solid rgba(0, 0, 0, 0.15);
+                        transition: all 0.4s;
+                        text-decoration: none;
+                        padding-top: 10px;
+                        font-size: 15px;
+                        &:hover{
+                            background-color: $siteBackgroundColor;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .home_right-sidbar{
+        flex-grow: 1;
+        width: 0;
+        .top-jobs{
+            box-shadow: 0px 1px 1.5px 0px rgba(181,179,181,1);
+            background-color: white;
+            padding: 20px 0;
+            h3{
+                padding-left: 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .line{
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.15);
+            }
+            .top-jobs_inner{
+                display: flex;
+                justify-content: space-between; 
+                padding: 20px 20px 0 20px;
+                font-size: 13px;
+                .job-name{
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+                .job-text{
+                    color: rgba(0, 0, 0, 0.568);
+                    font-weight: 500;
+                }
+                .job-price{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+.suggestedUserBox{
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    img{
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    .userName{
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 3px;
+    }
+    .userJob{
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.568);
+        margin-right: 70px;
+    }
+    button{
+        background-color: white;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        padding: 5px 5px 3px 5px;
+        border-radius: 4px;
+        cursor: pointer;
+        //height: 32px;
+        transition: all 0.3s;
+        &:hover{
+            border: 0;
+            background-color: $siteBackgroundColor;
+            border: 1px solid $siteBackgroundColor;
+            svg{
+                color: white;
+            }
+        }
+        svg{
+            color: gray
+            
+        }
+    }
+}
+
+@media screen and (max-width:1250px){
+    .home{
+        justify-content: space-around;
+        .home_right-sidbar{
+            display: none;
+        }
+        .home_left-sidbar{
+            flex-grow: 0;
+            width: 285px;
+            max-width: 80%;
+        }   
+        .home_center-sidbar{
+            flex-grow: 0;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .home{
+        .home_left-sidbar{
+            display: none;
+        }   
+        .home_center-sidbar{
+        }
+    }
+}
+@media screen and (max-width:570px){
+    .home{
+        .home_center-sidbar{
+            .top-profiles{
+                .slider{
+                    width: 90%;
+                    .slide{
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+        .post_form_box{
+            form{
+                .skills-input{
+                    flex-direction: column;
+                    .skills{
+                        margin-left: -50px;
+                        width: 80%
+                    }
+                }
+                .priceAndWorkTime{
+                    flex-direction: column;
+                    div{
+                        margin-bottom: 10px;
+                        .priceInput{
+                            width: 100px;
+                        }
+                        svg{
+                            height: 40px;
+                        }
+                    }
+                    select{
+                        width: 100px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

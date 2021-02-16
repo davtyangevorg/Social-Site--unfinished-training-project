@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+git clone --> npm install --> npm start
+for login you can use --->
+                          email ->    poxospoxosyan.99@mail.ru 
+                          password -> davtyan
 ## Available Scripts
 
 In the project directory, you can run:
